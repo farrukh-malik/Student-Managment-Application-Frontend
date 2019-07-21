@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  open :boolean = false;
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+  loginPage(){
+      this.router.navigate(['/dashboard']);
+  }
+
+  // let open = false;
+
+
+ onMouseEnter() {
+  document.querySelector(".login-wrapper").classList.add("login-page-wrapper");
+}
+
+ onMouseLeave() {
+  document.querySelector(".login-wrapper").classList.remove("login-page-wrapper");
+}
+
+ onClick(event){
+  event.stopPropagation();
+  open ? this.onMouseLeave() : this.onMouseEnter();
+  this.open=!open;
+}
 
 }

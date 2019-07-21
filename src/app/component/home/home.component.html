@@ -1,1 +1,18 @@
 <p>home works!</p>
+
+<header>
+    <input type="button" value="login" (click)= "loginPage()">
+</header>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<div class="login-wrapper"  (click)="onClick(ev)" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+  <div class="login-page"><div>Log in</div>
+    <div><input placeholder="login"></div>
+    <div><input placeholder="password"></div>
+    <button><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
+    </div>
+</div>
+<i class="fas fa-user-circle" (click)="onClick()" (mouseenter)="onMouseEnter()"></i>
+
+<div class="description">login page on hover/click</div>
