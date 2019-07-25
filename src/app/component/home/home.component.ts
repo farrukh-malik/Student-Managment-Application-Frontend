@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   // let open = false;
 
-
+// ----------1--------
  onMouseEnter() {
   document.querySelector(".login-wrapper").classList.add("login-page-wrapper");
 }
@@ -34,5 +34,6 @@ export class HomeComponent implements OnInit {
   open ? this.onMouseLeave() : this.onMouseEnter();
   this.open=!open;
 }
+// -------------1-------------
 
 }
