@@ -88,5 +88,49 @@ input{
 // ---------------1--------------
 
 // -------------2-----------------
+.main{
+  height: 520px;
+  // background-color: cadetblue;
+  background-size: cover; background-repeat: no-repeat;
+  background-image: url("./../../../assets/images/main.png");
+}
+.headingOne{
+  color: white;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+}
 
+.headingTwo{
+  background-color: transparent;
+    color: rgb(67, 219, 80);
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+  }
+
+  .headingThree{
+    color: white;
+    font-family: 'Droid Serif', serif;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 200px 0px 200px;
+  }
+
+  .btnTrial{
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    max-width: 300px;
+    margin: 15px auto 15px auto;  width: 250px;
+    height: 50px;
+    background-color:rgb(67, 219, 80);
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border: 0px;
+  }
 // ------------2------------------

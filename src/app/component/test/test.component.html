@@ -1,1 +1,90 @@
-<p>test works!</p>
+<!-- <p>test works!</p> -->
+
+<!-- navbar -->
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
+<nav class="main-menu" *ngIf="!sideBarCollapse" id="icon_wrapper">
+  <div class="logo">
+    <a href="" class="simple-text">
+        </a>
+  </div>
+  <ul>
+    <li class="has-subnav">
+      <a routerLink="/dashboard">
+                <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                    Dashboard
+                </span>
+            </a>
+
+    </li>
+    <li class="has-subnav">
+      <a routerLink="/projects">
+                <i class="fa fa-laptop fa-2x"></i>
+                <span class="nav-text">
+                    Projects
+                </span>
+            </a>
+    </li>
+    <li class="has-subnav">
+      <a routerLink="/teams">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <span class="nav-text">
+                    Teams
+                </span>
+            </a>
+    </li>
+
+    <li class="profileSideBar has-subnav dropdown">
+      <a class="collapsy" data-toggle="collapse" data-parent="sidebar-collapse" href="#user">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="nav-text dropbtn">
+                    Profile
+                    <b class="caret"></b>
+                </span>
+            </a>
+      <div class="collapse" id="user">
+        <ul class="nav dropdown-content">
+          <li>
+            <a>
+                            <span class="material-icons dropdown-icon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <span class="sidebar-normal"> My Profile </span>
+                        </a>
+          </li>
+          <li>
+            <a>
+                            <span class="material-icons dropdown-icon">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <span class="sidebar-normal" data-target="#createModal" data-toggle="modal"> Change Password </span>
+                        </a>
+          </li>
+          <li>
+            <a>
+                            <span class="material-icons dropdown-icon">
+                                <i class="fa fa-commenting"></i>
+                            </span>
+                            <span class="sidebar-normal"> Activities </span>
+                        </a>
+          </li>
+          <li>
+            <a (click)="logout()">
+                            <span class="material-icons dropdown-icon">
+                                <i class="fa fa-sign-out"></i>
+                            </span>
+                            <span class="sidebar-normal"> Logout </span>
+                        </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<!-- navbar -->
+
+<div class="w3-panel w3-card"><p>w3-card</p></div>

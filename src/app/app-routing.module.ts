@@ -6,7 +6,12 @@ import { SignupComponent } from './component/signup/signup.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { TestComponent } from './component/test/test.component';
-
+import { RegistrationFormComponent } from './component/registration-form/registration-form.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http'; 
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {
@@ -32,11 +37,16 @@ const routes: Routes = [
   {
     path: 'test',
     component: TestComponent
+  },
+  {
+    path: 'registration',
+    component: RegistrationFormComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [ HttpClientModule, ReactiveFormsModule, BrowserModule, RouterModule.forRoot(routes)],
+  // declarations: [AppComponent],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
