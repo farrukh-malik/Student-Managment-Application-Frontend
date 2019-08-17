@@ -26,27 +26,12 @@ export class RegistrationFormComponent implements OnInit {
     }
   }
 
-  addData(){
- 
-  }
-
 submitForm() {
-
-  this.registerForm = this.formBuilder.group({
-    firstName: ['bilalahmed', Validators.required],
-    lastName: ['ziaa', Validators.required],
-    email: ['aaa@gmail.com', [Validators.required, Validators.email]],
-    fatherName: ['bbc', [Validators.required]],
-    address: ['orangi', Validators.required],
-    mobileNumber: ['03472498243', Validators.requiredTrue],
-    homeContactNumber: ['03472498243', Validators.requiredTrue]
-  });
-
+// insert regigistration form data via registration api
   let headers = new HttpHeaders();
 
   headers.append('Content-Type', 'application/json');
   headers.append('Accept', 'application/json');
-
   headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
   headers.append('Access-Control-Allow-Credentials', 'true');
 
