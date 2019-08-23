@@ -12,6 +12,7 @@ import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import { RegistrationAdminComponent } from './component/admin/registration-admin/registration-admin.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'registration',
     component: RegistrationFormComponent
+  },
+  {
+    path: 'registration-admin',
+    component: RegistrationAdminComponent
   }
 ];
 

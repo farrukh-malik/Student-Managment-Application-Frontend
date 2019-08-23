@@ -10,6 +10,7 @@ import { SigninComponent } from './component/user/signin/signin.component';
 import { ProfileComponent } from './component/user/profile/profile.component';
 import { TestComponent } from './component/user/test/test.component';
 import { RegistrationFormComponent } from './component/user/registration-form/registration-form.component';
+import { RegistrationAdminComponent } from './component/admin/registration-admin/registration-admin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegistrationFormComponent } from './component/user/registration-form/re
     SigninComponent,
     ProfileComponent,
     TestComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    RegistrationAdminComponent
   ],
   imports: [
     BrowserModule,
