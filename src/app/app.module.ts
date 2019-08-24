@@ -11,6 +11,7 @@ import { ProfileComponent } from './component/user/profile/profile.component';
 import { TestComponent } from './component/user/test/test.component';
 import { RegistrationFormComponent } from './component/user/registration-form/registration-form.component';
 import { RegistrationAdminComponent } from './component/admin/registration-admin/registration-admin.component';
+import { LandingComponent } from './component/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RegistrationAdminComponent } from './component/admin/registration-admin
     ProfileComponent,
     TestComponent,
     RegistrationFormComponent,
-    RegistrationAdminComponent
+    RegistrationAdminComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
