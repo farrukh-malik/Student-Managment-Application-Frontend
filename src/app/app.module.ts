@@ -12,6 +12,10 @@ import { TestComponent } from './component/user/test/test.component';
 import { RegistrationFormComponent } from './component/user/registration-form/registration-form.component';
 import { RegistrationAdminComponent } from './component/admin/registration-admin/registration-admin.component';
 import { LandingComponent } from './component/landing/landing.component';
+import { HeaderComponent } from './component/usuableComponent/header/header.component';
+import { FooterComponent } from './component/usuableComponent/footer/footer.component';
+import { MainComponent } from './component/usuableComponent/main/main.component';
+import { NavComponent } from './component/usuableComponent/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { LandingComponent } from './component/landing/landing.component';
     TestComponent,
     RegistrationFormComponent,
     RegistrationAdminComponent,
-    LandingComponent
+    LandingComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
